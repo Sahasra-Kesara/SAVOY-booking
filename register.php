@@ -35,7 +35,7 @@ $status=1;
 	}
 	else
 	{
-		echo "hii";
+		echo "Welcome to SAVOY Cinema";
 	 //echo "<script>window.location = 'login_form.php';</script>";
 	}
 

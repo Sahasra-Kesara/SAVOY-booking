@@ -22,8 +22,9 @@ opacity: 0.9;
 .loginholder
 {
 padding: 20px 5px 25px 5px;
-background-color: #fff;
+background-color: #161414;
 display: inline-block;
+border-radius: 10px;
 }
 
 .inputbox

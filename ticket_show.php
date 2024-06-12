@@ -31,7 +31,7 @@ if (!isset($_SESSION['uname'])) {
         <div class="col-lg-6 mx-auto">
 <div class="card ">
                 <div class="card-header">
-                    <center><img src="img/logo.png" width="40%">
+                    <center><img src="img/logo2.png" width="40%">
                     <h6> Near Upansna Circle, Surendranagar</h6></center>
                     <?php 
                   include "Database.php";

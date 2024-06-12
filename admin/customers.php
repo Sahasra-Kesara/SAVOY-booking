@@ -6,7 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <title>Customer Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 
 <?php session_start();
@@ -26,7 +33,7 @@ if (!isset($_SESSION['admin'])) {
       		<h2>Customers</h2>
       	</div>
         <div class="col-2">
-          <button data-toggle="modal" data-target="#add_custemer_modal" class="btn btn-primary btn-sm">Add Movie</button>
+          <button data-toggle="modal" data-target="#add_custemer_modal" class="btn btn-primary btn-sm">Add Customer</button>
         </div>
       </div>
       

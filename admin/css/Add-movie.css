@@ -1,0 +1,154 @@
+/* Add-movie.css */
+
+/* Body styles */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Container styles */
+  .container-fluid {
+    margin-top: 20px;
+  }
+  
+  /* Header styles */
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Table styles */
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table th,
+  .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  /* Modal styles */
+  .modal-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Image styles */
+  .resize {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar-brand {
+    padding: 0.75rem;
+  }
+  
+  .navbar-dark {
+    background-color: #343a40;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 60px 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 60px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 0.25rem 1.5rem;
+    color: #212529;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Active page indicator */
+  .nav-item.active .nav-link {
+    color: #007bff;
+  }
+  
+  /* Active page indicator background */
+  .nav-item.active .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #007bff;
+  }
+  
+  /* Main content area */
+  .main-content {
+    margin-left: 250px;
+    padding: 15px;
+  }
+  
+  /* Optional: Border bottom for navbar */
+  .navbar {
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  /* Optional: Shadow for navbar */
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

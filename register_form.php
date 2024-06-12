@@ -13,7 +13,7 @@
 <body>
 
   <div class="container">
-    <center><a href="./index.html"><img src="img/logo.png" alt="" style="margin-top: 80px; width: 50%;"></a></center>
+    <center><a href="./index.html"><img src="img/logo2.png" alt="" style="margin-top: 80px; width: 50%;"></a></center>
     <div class="title">Registration</div>
     <div class="content">
       <form id="form" action="register.php" method="post" enctype="multipart/form-data" onsubmit="return validate();">

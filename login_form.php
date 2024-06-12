@@ -1,106 +1,132 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Login Page</title>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="site.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('./image/theatre_2_1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .parent-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loginholder {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #000;
+        }
+        .loginholder img {
+            margin-bottom: 20px;
+        }
+        .inputbox {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-normal {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-normal:hover {
+            background-color: #0056b3;
+        }
+        .forgetpassword a, .register-now a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .forgetpassword a:hover, .register-now a:hover {
+            text-decoration: underline;
+        }
+        #nameerror, #passerror, #msg {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-<div>
-	<div class="parent-container">
+    <div class="parent-container">
+        <div class="loginholder">
+            <a href="./index.html"><img src="img/logo2.png" alt="Logo" width="180px"></a>
+            <div class="form-group">
+                <label for="username"><b>User Id:</b></label>
+                <input type="text" class="form-control inputbox" id="username"/>
+                <p id="nameerror"></p>
+            </div>
+            <div class="form-group">
+                <label for="password"><b>Password:</b></label>
+                <input type="password" class="form-control inputbox" id="password"/>
+                <p id="passerror"></p>
+                <div id="msg"></div>
+            </div>
+            <button class="btn btn-normal" id="login">LOGIN</button>
+            <br><br>
+            <span class="forgetpassword"><a href="forget_password.php">Forget your Password?</a></span><br>
+            <span class="register-now"><a href="register_form.php">Register now</a></span><br>
+            <hr>
+            <span class="forgetpassword"><a href="./admin/index.php">Savoy Staff</a></span>
+        </div>
+    </div>
 
-		<table width="100%" height="100%">
-		<tr>
-			<td align="center" valign="middle">
-				<div class="loginholder">
-        
-					<table style="background-color:white;" class="table-condensed">
-					<tr>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#login").click(function(){
+                var username = $("#username").val().trim();
+                var password = $("#password").val().trim();
 
-  						<a href="./index.html"><img src="img/logo.png" alt="" width="180px"></a>
-					</tr>
-					<tr>
-						<td><b>User Id:</b></td>
-					</tr>
-					<tr>
-						<td><input type="text" class="inputbox" id="username"/>
-              <br><p id="nameerror"></p></td>
-					</tr>
-					<tr>
-						<td><b>Password:</b></td>
-					</tr>
-					<tr>
-						<td><input type="text" class="inputbox" id="password" />
-              <br><p id="passerror"></p><div id="msg"></div> </td>
-            
-					</tr>
-					<tr>
-						<td align="center"><br />
-
-						 <button class="btn-normal" id="login">LOGIN</button>
-						</td>
-					</tr>
-					<tr>
-						<td align="left"><br />
-						<span class="forgetpassword"><a href="forget_password.php"> Forget your Password ?</a></span></td>
-
-					</tr>
-					<td><a href="register_form.php"> Resiter now</a></td>
-					<tr>
-						<td><hr style="background-color:blue;height:1px;margin:0px;"/></td>
-					</tr>
-					<tr>
-						<td align="center"></td>
-					</tr>
-
-					</table>
-        
-				</div>
-			</td>
-		</tr>
-		</table>
-	</div>
-</div>
-<script type="text/javascript">
-
-	$(document).ready(function(){
-  $("#login").click(function(){
-    var username = $("#username").val().trim();
-    var password = $("#password").val().trim();
-
-   
-     if( username == "" )
- {
-  error = " <font color='red'>!Requrie Name.</font> ";
-  document.getElementById( "nameerror" ).innerHTML = error;
-  return false;
- }
-  
-  if( password == "")
- {
-  error = " <font color='red'>!Requrie Email.</font> ";
-  document.getElementById( "passerror" ).innerHTML = error;
-  return false;
- }
-    $.ajax({
-      url:'login.php',
-      type:'post',
-      data:{username:username,password:password},
-      success:function(response){
-          if(response == 1){
-                                    window.location = "index.php";
-                                }else{
-                                     error = " <font color='red'>!Invalid UserId.</font> ";
-                                     document.getElementById( "msg" ).innerHTML = error;
-                                      return false;
-                                }
-        $("#message").html(response);
-      }
-    });
-  });
-});
-</script>
+                if(username == "") {
+                    var error = " <font color='red'>!Require Name.</font> ";
+                    $("#nameerror").html(error);
+                    return false;
+                }
+                if(password == "") {
+                    var error = " <font color='red'>!Require Password.</font> ";
+                    $("#passerror").html(error);
+                    return false;
+                }
+                $.ajax({
+                    url: 'login.php',
+                    type: 'post',
+                    data: {username: username, password: password},
+                    success: function(response){
+                        if(response == 1){
+                            window.location = "index.php";
+                        } else {
+                            var error = " <font color='red'>!Invalid UserId or Password.</font> ";
+                            $("#msg").html(error);
+                            return false;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -50,9 +50,9 @@ session_start();
                         </div>
                         <ul>
                             <li>
-                                <h4>Surendranagar</h4>
-                                <p>Inox Cinema, Near Upashna Circle, Surendranagar.  <br />+91 187-654-3210
-                                    <br />+91 258-963-1470</p>
+                                <h4>M. Sahasra Kesara Cooray</h4>
+                                <p>SAVOY Cinema, Bambalapitiya, Colombo, Sri Lanka.  <br />+94 77 05 68 68 8
+                                    <br />+94 11 2646619</p>
                             </li>
                         
                         </ul>

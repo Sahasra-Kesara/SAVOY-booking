@@ -6,7 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <title>Theater and Show Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 <?php session_start();
 if (!isset($_SESSION['admin'])) {
@@ -22,10 +29,10 @@ if (!isset($_SESSION['admin'])) {
 
       <div class="row">
       	<div class="col-10">
-      		<h2>Feedback</h2>
+      		<h2>Theater and Show</h2>
       	</div>
       	<div class="col-2">
-          <button data-toggle="modal" data-target="#add_show" class="btn btn-primary btn-sm">Add Show</button>
+          <button data-toggle="modal" data-target="#add_show" class="btn btn-primary btn-sm">Add Show and Theater</button>
         </div>
        
         

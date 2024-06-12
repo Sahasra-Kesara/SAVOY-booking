@@ -28,6 +28,7 @@ session_start();
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="  text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">    
+    
 </head>
 
 <body>
@@ -40,7 +41,7 @@ include("header.php");
 ?>
 
 <div class="container">
-   <img src=image/theatre_2.jpg alt="" class="image-resize" style="width: 100%; height: 400px;">
+   <img src=image/theatre_2_1.jpg alt="" class="image-resize" style="width: 100%; height: 400px;">
 </div>
 
 <div class="container">

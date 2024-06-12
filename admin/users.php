@@ -6,7 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <title>Manageuser Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 
 <?php session_start();
@@ -60,8 +67,8 @@ if (mysqli_num_rows($result) > 0) {
               <td><?php echo $row['city'];?></td>
               <td><?php echo $row['password'];?></td>
               <td><img src="image/<?php echo $row['image']; ?>" alt="" class="resize"></td>
-              <td><button data-toggle="modal" type="button" data-target="#edit_users_modal<?php echo $id;?>" class="btn btn-primary btn-sm">Edit Movie</button>
-              <button data-toggle="modal" type="button" data-target="#delete_users_modal<?php echo $id;?>" class="btn btn-danger btn-sm">Delete Movie</button></td></td>
+              <td><button data-toggle="modal" type="button" data-target="#edit_users_modal<?php echo $id;?>" class="btn btn-primary btn-sm">Edit User</button>
+              <button data-toggle="modal" type="button" data-target="#delete_users_modal<?php echo $id;?>" class="btn btn-danger btn-sm">Delete User</button></td></td>
             </tr>
 
  <div class="modal fade" id="delete_users_modal<?php echo $row['id'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

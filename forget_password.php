@@ -19,7 +19,7 @@
 					<table style="background-color:white;" class="table-condensed">
 					<tr>
 
-  						<a href="./index.html"><img src="img/logo.png" alt="" width="250px"></a>
+  						<a href="./index.html"><img src="img/logo2.png" alt="" width="250px"></a>
 					</tr>
 					<tr>
 						<td><b>Email Id:</b></td>

@@ -6,8 +6,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Movies Page</title>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <title>Movies Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./online-movie-booking/admin/css/Add-movie.css">
 <?php session_start();  
 if (!isset($_SESSION['admin'])) {
   header("location:login.php");
@@ -16,6 +21,7 @@ if (!isset($_SESSION['admin'])) {
 
 <?php include_once("./templates/top.php"); ?>
 <?php include_once("./templates/navbar.php"); ?>
+
 <div class="container-fluid">
   <div class="row">
     
