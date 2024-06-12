@@ -1,5 +1,3 @@
-![Screenshot (317)](https://github.com/Sahasra-Kesara/SAVOY-booking/assets/121740972/08c8b984-9059-4625-ae2c-deaca35cc4c7)
-
 ![Screenshot (318)](https://github.com/Sahasra-Kesara/SAVOY-booking/assets/121740972/e1d3b6d0-8045-45a7-b56e-19c37566d062)
 
 ![Screenshot (319)](https://github.com/Sahasra-Kesara/SAVOY-booking/assets/121740972/34bf6c21-8fa9-4e27-a056-790c4af3c6c7)
